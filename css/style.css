@@ -1,0 +1,81 @@
+@import "evaluations.css";
+
+
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',sans-serif;color:#1B5E20;background:#F1F8E9;transition:background .3s,color .3s;}
+
+/* Header */
+header{position:fixed;top:0;left:0;width:100%;background:#1B5E20;z-index:100;transition:background .3s;}
+.container-header{max-width:1200px;margin:0 auto;padding:1rem;display:flex;align-items:center;justify-content:space-between;}
+.logo{height:40px;filter:none;transition:filter .3s;}
+nav a{margin-left:1.5rem;color:#E8F5E9;text-decoration:none;font-weight:500;transition:color .3s;}
+nav a:hover,nav a.active{color:#A5D6A7;}
+.theme-btn{background:none;border:none;color:#E8F5E9;font-size:1.2rem;cursor:pointer;transition:color .3s;}
+
+/* Hero */
+#hero{height:100vh;background:url('../images/header-background.png') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;}
+#hero .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);}
+.hero-content{position:relative;z-index:1;color:#A5D6A7;max-width:800px;padding:0 1rem;}
+.hero-content h1{font-size:1.2rem;letter-spacing:2px;margin-bottom:.5rem;}
+.hero-content h1 span{color:#66BB6A;}
+.hero-content h2{font-size:4rem;color:#66BB6A;margin-bottom:1rem;}
+.hero-content p{font-size:1.2rem;line-height:1.5;margin-bottom:1.5rem;color:#C8E6C9;}
+.btn-outline{padding:.75rem 1.5rem;border:2px solid #66BB6A;color:#66BB6A;text-decoration:none;border-radius:4px;font-weight:500;transition:background .3s;color:#fff;background:transparent;}
+.btn-outline:hover{background:rgba(102,187,106,0.2);}
+
+/* Seções gerais */
+.container{max-width:1200px;margin:4rem auto;padding:0 1rem;color:#1B5E20;transition:background .3s,color .3s;}
+h2{font-size:2rem;margin-bottom:1rem;color:#2E7D32;text-align:center;}
+
+/* Sobre */
+.cards-sobre{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
+.card-sobre{padding:1.5rem;border-radius:8px;box-shadow:0 10px 10px rgba(0,0,0,0.1);text-align:center;color:#1B5E20;transition:background .3s,color .3s, transform 0.3s,box-shadow .3s;}
+.card-sobre h3{margin-bottom:.5rem;color:#388E3C;}
+.card-sobre:hover{transform: translateY(-5px);}
+
+/* Plugins */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
+.card{padding:1.5rem;border-radius:8px;box-shadow:0 10px 10px rgba(0,0,0,0.1);text-align:center;color:#1B5E20;transition:background .3s,color .3s, transform 0.3s,box-shadow .3s;}
+.card:hover{transform: translateY(-5px);}
+.card h3{margin-bottom:.0rem;color:#2E7D32;}
+.card-price {display: grid;color: #6b7280;font-size: 0.7rem;margin-bottom: 0.3rem;font-weight: bold}
+.btn{margin-top:1rem;padding:.6rem 1.2rem;background:#2E7D32;color:#fff;border:none;border-radius:4px;cursor:pointer;transition:background .3s;text-decoration: none}
+.btn:hover{background:#1B5E20;}
+
+/* Vídeo responsivo */
+.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:4px;margin:1rem 0;}
+.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+
+/* Modal */
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;z-index:200;}
+.modal {background: #fff;padding: 2rem;border-radius: 8px;max-width: 500px;width: 90%;position: relative;color: #1B5E20;max-height: 90vh;overflow-y: auto;}
+.close-btn {position: sticky;top: 1rem;right: 1rem;background: none;border: none;font-size: 1.5rem;cursor: pointer;color: #555;z-index: 10;}
+.modal h3{text-align: center}
+.modal ul {margin-left: 20px}
+.btn-buy {display: inline-block;margin-top: 1rem;padding: .6rem 1.2rem;background: #66BB6A;color: #fff;text-decoration: none;border-radius: 4px;font-weight: 500;transition: background .3s;}
+.btn-buy:hover {background: #57A05B;}
+/* Contato */
+#contato {text-align: center;padding: 4rem 1rem;background: #ffffff;border-radius: 8px;box-shadow: 0 2px 6px rgba(0,0,0,0.1);transition: background .3s, color .3s, box-shadow .3s;}
+#contato h2 {font-size: 2rem;margin-bottom: 1rem;color: #2E7D32;}
+#contato p {font-size: 1.125rem;margin-bottom: 2rem;color: #1B5E20;}
+
+/* Dark Mode Styles */
+body.dark-mode {background: #121212;color: #ECEFF1;}
+body.dark-mode header { background: #263238; }
+body.dark-mode .container { color: #ECEFF1; }
+body.dark-mode .card-sobre,
+body.dark-mode .card,
+body.dark-mode .modal { background: #37474F; color: #ECEFF1; box-shadow:0 2px 6px rgba(0,0,0,0.5);}
+body.dark-mode .card-price {color: #ECEFF1;}
+body.dark-mode .close-btn {color: #ECEFF1;}
+body.dark-mode #contato {background: #263238;box-shadow: 0 2px 6px rgba(0,0,0,0.5);}
+body.dark-mode #contato h2 {color: #A5D6A7;}
+body.dark-mode #contato p {color: #ECEFF1;}
+body.dark-mode .card h3,
+body.dark-mode .card-sobre h3,
+body.dark-mode h2 {color: #A5D6A7;}
+body.dark-mode .avaliacao-card {background-color: #37474F;color: #ECEFF1;}
+body.dark-mode .avaliacao-card img {border: 3px solid #57A05B;}
+body.dark-mode .btn {background-color: #57A05B}

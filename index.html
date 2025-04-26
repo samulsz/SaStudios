@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo.png">
+    <title>SaStudios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container-header">
+        <img src="images/logo.png" alt="SA Studios" class="logo">
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#plugins">Plugins</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>UMA EQUIPE <span>PROFISSIONAL</span></h1>
+        <h2>SA STUDIOS</h2>
+        <p>Transforme seu servidor Minecraft ou comunidade Discord com nossas soluções personalizadas.</p>
+        <a href="#sobre" class="btn-outline">Veja mais</a>
+    </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="container">
+    <h2>Nos conheça melhor!</h2>
+    <div class="cards-sobre">
+        <div class="card-sobre">
+            <h3>Bots de Discord</h3>
+            <p>Automatização, moderação e integração com Minecraft.</p>
+        </div>
+        <div class="card-sobre">
+            <h3>Sistemas de Economia</h3>
+            <p>Gerencie o andamento da sua economia com a nossa equipe</p>
+        </div>
+        <div class="card-sobre">
+            <h3>Configuração de Servidores</h3>
+            <p>Servidores completos, plugins e proteção de construções.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Plugins -->
+<section id="plugins" class="container">
+    <h2>Nossos Plugins</h2>
+    <div class="grid">
+        <!-- saItensEspeciais -->
+        <div class="card">
+            <h3>saItensEspeciais</h3>
+            <p class="card-price">Preço: R$45</p>
+            <p>Adicione missões dentro de itens para evoluir sua fortuna!</p>
+            <button data-modal="iespe" class="btn">Detalhes</button>
+        </div>
+        <!-- saEspeciaisEnchants -->
+        <div class="card">
+            <h3>saEspeciaisEnchants</h3>
+            <p class="card-price">Preço: R$100</p>
+            <p>Adicione encantamentos especiais dentro do seu servidor!</p>
+            <button data-modal="encesp" class="btn">Detalhes</button>
+        </div>
+        <!-- saAntiGrief -->
+        <div class="card">
+            <h3>saAntiGrief</h3>
+            <p class="card-price">Preço: GRÁTIS</p>
+            <p>Proteja as contas da sua equipe contra invasores!</p>
+            <button data-modal="antigr" class="btn">Detalhes</button>
+        </div>
+    </div>
+</section>
+
+<!-- Avaliações -->
+
+<section id="avaliacoes" class="avaliacoes-section">
+    <h2>Confira o que nossos clientes dizem</h2>
+    <p>Veja as avaliações feitas por quem já conhece nossos produtos.</p>
+
+    <div class="avaliacoes-container">
+        <div class="avaliacao-card">
+            <img src="https://mc-heads.net/avatar/TheStrainPT/100" alt="Avatar do Cliente">
+            <h3>TheStrainPT</h3>
+            <div class="estrelas">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <p>Serviço incrível, recomendo muito!</p>
+        </div>
+
+        <div class="avaliacao-card">
+            <img src="https://mc-heads.net/avatar/ReiAlone/100" alt="Avatar do Cliente">
+            <h3>ReiAlone</h3>
+            <div class="estrelas">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <p>Atendimento excelente, preço justo, trabalho organizado, ágil e bem feito. Recomendo.</p>
+        </div>
+
+        <div class="avaliacao-card">
+            <img src="https://mc-heads.net/avatar/eapp/100" alt="Avatar do Cliente">
+            <h3>EoGarsa</h3>
+            <div class="estrelas">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <p>Atendimento ótimo, preço ótimo, trabalho ágil. Recomendo!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="container">
+    <h2>Entre em contato</h2>
+    <p>Para solicitar serviços ou adquirir plugins, junte-se ao nosso Discord.</p>
+    <a href="https://discord.gg/MDwtf2Pshv" class="btn">Entrar</a>
+</section>
+
+<!-- Modais -->
+<div class="modal-overlay" id="iespe">
+    <div class="modal">
+        <button class="close-btn">×</button>
+        <h2>saItensEspeciais</h2>
+        <br>
+        <h4>Recursos:</h4>
+        <ul>
+            <li>Sistema de loja ja integrada no plugin;</li>
+            <li>Possui também um comando de give;</li>
+            <li>O plugin possui uma configuração 100% editável;</li>
+            <li>Você configura as missões/blocos por missões;</li>
+            <li>Whitelist de blocos(podendo por mais de 1);</li>
+            <li>Whitelist de mundos(podendo por mais de 1)</li>
+        </ul>
+        <br>
+        <h4>Demonstração:</h4>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/67y-g9-HMxM?si=9N5R-DzNyhC_RsQ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://discord.gg/MDwtf2Pshv" class="btn-buy">Comprar</a>
+    </div>
+</div>
+<div class="modal-overlay" id="encesp">
+    <div class="modal">
+        <button class="close-btn">×</button>
+        <h2>saEspeciaisEnchants</h2>
+        <br>
+        <h4>Recursos:</h4>
+        <ul>
+            <li>Sistema de chances(para os encantamentos ativarem);</li>
+            <li>Todos os encantamentos são possíveis editar a lore e nome;</li>
+            <li>Os danos/níveis das poções são editáveis;</li>
+            <li>As mensagens são todas editáveis;</li>
+            <li>Plugin 100% configurável;</li>
+        </ul>
+        <br>
+        <h4>Demonstração:</h4>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SBckrobnWNc?si=2jGCZStRNC6r0elE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://discord.gg/MDwtf2Pshv" class="btn-buy">Comprar</a>
+    </div>
+</div>
+<div class="modal-overlay" id="antigr">
+    <div class="modal">
+        <button class="close-btn">×</button>
+        <h2>saAntiGrief</h2>
+        <br>
+        <h4>Recursos:</h4>
+        <ul>
+            <li>Exige uma senha personalizada para o staff antes de interagir com o servidor;</li>
+            <li>Bloqueia ações não autorizadas antes do login;</li>
+            <li>Bloqueia completamente qualquer interação ou teleporte antes do login;</li>
+            <li>Bloqueia qualquer comando até o jogador se autenticar;</li>
+            <li>Staff entra automaticamente no modo Sobrevivência ao entrar no servidor;</li>
+            <li>Plugin completamente personalizável</li>
+        </ul>
+        <br>
+        <h4>Demonstração:</h4>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/li83PcsP0tc?si=ZfTzyPy_aLNAz4WB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://discord.gg/MDwtf2Pshv" class="btn-buy">Comprar</a>
+    </div>
+</div>
+
+<script>
+    // Smooth scroll
+    document.querySelectorAll('nav a, .btn-outline').forEach(el => {
+        el.addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector(el.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    // Modais
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.getElementById(btn.dataset.modal).style.display = 'flex';
+        });
+    });
+    document.querySelectorAll('.close-btn').forEach(btn => {
+        btn.addEventListener('click', () => btn.closest('.modal-overlay').style.display = 'none');
+    });
+
+    // Dark Mode Toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+</script>
+</body>
+</html>
